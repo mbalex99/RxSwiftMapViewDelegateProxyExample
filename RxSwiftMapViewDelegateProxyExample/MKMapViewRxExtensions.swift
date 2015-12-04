@@ -10,7 +10,7 @@ import MapKit
 import RxSwift
 import RxCocoa
 
-class RxMKMapviewDelegateProxy: DelegateProxy, MKMapViewDelegate, DelegateProxyType {
+class RxMKMapViewDelegateProxy: DelegateProxy, MKMapViewDelegate, DelegateProxyType {
     
     class func currentDelegateFor(object: AnyObject) -> AnyObject? {
         let mapView: MKMapView = object as! MKMapView
@@ -26,7 +26,7 @@ class RxMKMapviewDelegateProxy: DelegateProxy, MKMapViewDelegate, DelegateProxyT
 extension MKMapView {
     
     public var rx_delegate: DelegateProxy {
-        return proxyForObject(self) as RxMKMapviewDelegateProxy
+        return proxyForObject(self) as RxMKMapViewDelegateProxy
     }
     
     public var rx_regionDidChangeAnimated: Observable<Bool> {
