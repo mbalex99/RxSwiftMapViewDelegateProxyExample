@@ -16,7 +16,9 @@ This will fire when the center changes.
 We'll out put some data to the console as well as a UILabel right up top.
 
 
-# Step 1 - Proxy Setup
+# The Example Source Code is Complete, but here are the steps if you want to recreate the magical experience
+
+## Step 1 - Proxy Setup
 
 Create a DelegateProxy class for MKMapView. This is just an Object that inherits `DelegateProxy`, `MKMapViewDelegate` and `DelegateProxyType`
 
@@ -38,7 +40,7 @@ class RxMKMapViewDelegateProxy: DelegateProxy, MKMapViewDelegate, DelegateProxyT
 }
 ```
 
-# Step 2 - Create the Extension Methods
+## Step 2 - Create the Extension Methods
 
 ```swift
 extension MKMapView {
@@ -63,7 +65,7 @@ extension MKMapView {
 }
 ```
 
-# Step 3 - Listen for the Changes
+## Step 3 - Listen for the Changes
 
 Now you don't have to implement the delegate! Just observe the property right on the spot.
 
