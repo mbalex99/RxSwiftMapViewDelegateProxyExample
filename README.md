@@ -97,4 +97,8 @@ mapView.rx_centerDidChange
 ## Going forward
 I hope this example shows you how you can leverage extensions to encapsulate Delegate listeners into consumable RxSwift Methods.
 
+
 Follow this pattern and enjoy your bliss!
+
+![Alt text](http://i.giphy.com/EVwcdTMir2BDq.gif)
+
